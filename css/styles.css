@@ -42,8 +42,7 @@ body {
   --hero-overlay-color: rgba(47, 48, 58, 0.4);
   --icon-color: #afb1b8;
   --bgc-icon-footer: rgba(255, 255, 255, 0.1);
-  --bgc-overflow:  rgba(33, 150, 243, 0.9);
-
+  --bgc-overflow: rgba(33, 150, 243, 0.9);
 }
 
 a {
@@ -131,7 +130,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current::after {
@@ -149,8 +148,6 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .item .link {
   display: flex;
 }
@@ -162,7 +159,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info .contact {
@@ -240,7 +237,7 @@ ul {
   letter-spacing: 0.06em;
   margin-top: 30px;
   padding: 10px 32px 10px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .btn:focus,
@@ -430,7 +427,8 @@ ul {
   padding: 12px;
   color: var(--icon-color);
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -470,7 +468,8 @@ ul {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   padding: 16px 32px;
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -503,7 +502,9 @@ ul {
   background-color: var(--bgc-btn);
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons .item {
@@ -525,7 +526,6 @@ ul {
 /* КАРТОЧКИ */
 
 .cards-list {
-  
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -533,7 +533,6 @@ ul {
 }
 
 .cards-list .item {
-  
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
@@ -555,40 +554,39 @@ ul {
   line-height: 2;
 }
 
-.overflow-img{
+.overflow-img {
   position: relative;
   overflow: hidden;
 }
 
-.overflow-img .overflow{
+.overflow-img .overflow {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  
+
   background-color: var(--bgc-overflow);
   opacity: 0;
   transform: translatey(100%);
   pointer-events: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards-list .item:hover .overflow-img .overflow{
+.cards-list .item:hover .overflow-img .overflow {
   transform: translatey(0);
   opacity: 1;
 }
 
 .overflow .text {
-  font-family: roboto,sans-serif;
+  font-family: roboto, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
   padding: 63px 24px;
   letter-spacing: 0.03em;
-  color: var(--lite-color);  
+  color: var(--lite-color);
 }
-
 
 .projects .filter {
   color: var(--accent-color);
@@ -624,7 +622,7 @@ ul {
 
 .footer .link {
   color: var(--accent-color);
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .link:hover,
@@ -693,7 +691,7 @@ ul {
   padding: 12px;
   border: 1px solid var(--bgc-icon-footer);
   border-radius: 50%;
-  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:focus,
@@ -723,18 +721,25 @@ ul {
 }
 
 .modal {
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   min-width: 528px;
   min-height: 581px;
   background-color: var(--lite-color);
   padding: 15px;
   border-radius: 4px;
+  animation-name: modal;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
+/* .modal::before {
+  content: "";
+} */
 .modal .btn {
   position: absolute;
   top: 0;
@@ -744,10 +749,19 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 6px;
-  
 }
 
 .modal .close {
   width: 18px;
   height: 18px;
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
