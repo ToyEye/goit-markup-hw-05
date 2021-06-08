@@ -732,9 +732,10 @@ ul {
   padding: 15px;
   border-radius: 4px;
   animation-name: modal;
-  animation-duration: 500ms;
+  animation-duration: 3000ms;
   animation-timing-function: linear;
   animation-iteration-count: 1;
+  transform-origin: top left;
 }
 
 /* .modal::before {
@@ -758,10 +759,9 @@ ul {
 
 @keyframes modal {
   0% {
-    opacity: 0;
+    transform: scale(0.2);
   }
 
   100% {
-    opacity: 1;
   }
 }
