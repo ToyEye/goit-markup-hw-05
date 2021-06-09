@@ -291,6 +291,7 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* WORK INDEX*/
@@ -308,7 +309,7 @@ ul {
   margin-right: 30px;
 }
 
-.item-position::before {
+/* .item-position::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -316,7 +317,7 @@ ul {
   width: 100%;
   height: 70px;
   bottom: 0%;
-}
+} */
 
 .work-cards .item:last-child {
   margin-right: 0;
@@ -334,9 +335,14 @@ ul {
   line-height: 1.172;
   letter-spacing: 0.03em;
   left: 50%;
-  bottom: 27px;
   transform: translateX(-50%);
   color: var(--lite-color);
+  background-color: #2f303acc;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  text-align: center;
+  padding-top: 27px;
 }
 
 .work .title {
@@ -567,15 +573,13 @@ ul {
   height: 100%;
 
   background-color: var(--bgc-overflow);
-  opacity: 0;
   transform: translatey(100%);
   pointer-events: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-list .item:hover .overflow-img .overflow {
   transform: translatey(0);
-  opacity: 1;
 }
 
 .overflow .text {
