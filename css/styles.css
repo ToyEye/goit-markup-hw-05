@@ -769,3 +769,7 @@ ul {
   100% {
   }
 }
+
+.order {
+  display: flex;
+}
